@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sugar and Slices – Cakes &amp; Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <div id="site-nav"></div>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>SUGAR AND SLICES</h1>
+      <p>Freshly Baked Happiness in Every Bite 🍰</p>
+      <a class="btn light" href="cake.html">Order a Cake</a>
+      <a class="btn outline" style="color:#fff;border-color:#fff" href="bakery.html">Browse Bakery</a>
+    </div>
+  </header>
+
+  <!-- Favourites -->
+  <section class="section">
+    <div class="section-head">
+      <h2>Our Favourites</h2>
+      <p>A little taste of what's fresh out of our oven today.</p>
+    </div>
+    <div class="grid two-col">
+      <div class="card">
+        <div class="thumb"><span class="tag">BESTSELLER</span><img src="images/chocolate.jpg" alt="Chocolate Cake"></div>
+        <div class="body"><h3>Chocolate Cake</h3><p>Rich and delicious chocolate cake.</p>
+          <div class="row"><div class="price">₹499</div><a class="btn" href="cart.html?id=chocolate-cake">Order Now</a></div></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><span class="tag">NEW</span><img src="images/blueberry-cheesecake.jpg" alt="Blueberry Cheesecake"></div>
+        <div class="body"><h3>Blueberry Cheesecake</h3><p>Creamy baked cheesecake swirled with blueberry compote.</p>
+          <div class="row"><div class="price">₹799</div><a class="btn" href="cart.html?id=blueberry-cheesecake">Order Now</a></div></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><span class="tag">NEW</span><img src="images/lotus-biscoff-cake.jpg" alt="Lotus Biscoff Loaf Cake"></div>
+        <div class="body"><h3>Lotus Biscoff Loaf Cake</h3><p>Spiced loaf topped with biscoff cream and crunchy biscuits.</p>
+          <div class="row"><div class="price">₹649</div><a class="btn" href="cart.html?id=lotus-biscoff-cake">Order Now</a></div></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images/strawberry.jpg" alt="Strawberry Cake"></div>
+        <div class="body"><h3>Strawberry Cake</h3><p>Fresh and delicious strawberry cake.</p>
+          <div class="row"><div class="price">₹549</div><a class="btn" href="cart.html?id=strawberry-cake">Order Now</a></div></div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:40px"><a class="btn outline" href="cake.html">See All Cakes →</a></p>
+  </section>
+
+  <!-- Decoration banner -->
+  <section class="decor">
+    <h2>Made Fresh for Every Celebration</h2>
+    <p>Birthdays, anniversaries or just because – tell us your dream cake and we'll bake it with love.</p>
+    <a class="btn light" href="cake.html">Design Your Cake</a>
+  </section>
+
+  <!-- Feedback -->
+  <section class="section alt" id="feedback">
+    <div class="section-head">
+      <h2>Feedback &amp; Reviews ⭐</h2>
+      <p>We would love to hear about your experience with Sugar and Slices.</p>
+    </div>
+    <div class="panel" style="max-width:640px;margin:0 auto">
+      <form id="feedbackForm">
+        <div class="two">
+          <div><label for="fbName">Your name</label><input id="fbName" required placeholder="Enter your name"></div>
+          <div><label for="fbItem">What did you order?</label>
+            <select id="fbItem"><option>Cake</option><option>Bakery item</option><option>Custom cake</option></select></div>
+        </div>
+        <label>How would you rate our service?</label>
+        <div class="stars">
+          <input type="radio" name="rate" id="s5" value="5" required><label for="s5" title="Excellent">★</label>
+          <input type="radio" name="rate" id="s4" value="4"><label for="s4" title="Very good">★</label>
+          <input type="radio" name="rate" id="s3" value="3"><label for="s3" title="Good">★</label>
+          <input type="radio" name="rate" id="s2" value="2"><label for="s2" title="Average">★</label>
+          <input type="radio" name="rate" id="s1" value="1"><label for="s1" title="Poor">★</label>
+        </div>
+        <label for="fbMsg">Your feedback</label>
+        <textarea id="fbMsg" placeholder="Tell us what you loved or how we can improve..." required></textarea>
+        <button class="btn" style="margin-top:20px" type="submit">Submit Feedback</button>
+        <div class="form-msg"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-head">
+      <h2>Contact Us 📞</h2>
+      <p>We'd love to hear from you! Get in touch with Sugar and Slices.</p>
+    </div>
+    <div class="split">
+      <div class="panel info-list">
+        <h2>Get In Touch 💌</h2>
+        <p>📍 <b>Address:</b> 123 Sweet Street, Jalandhar</p>
+        <p>📞 <b>Phone:</b> +91 9872223355</p>
+        <p>📧 <b>Email:</b> sugarandslices@gmail.com</p>
+        <p>🕐 <b>Opening Hours:</b> 9:00 AM – 9:00 PM</p>
+      </div>
+      <div class="panel">
+        <h2>Send us a message</h2>
+        <form id="contactForm">
+          <label for="cName">Name</label><input id="cName" required placeholder="Your name">
+          <label for="cEmail">Email</label><input id="cEmail" type="email" required placeholder="you@example.com">
+          <label for="cMsg">Message</label><textarea id="cMsg" required placeholder="How can we help?"></textarea>
+          <button class="btn" style="margin-top:18px" type="submit">Send Message</button>
+          <div class="form-msg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

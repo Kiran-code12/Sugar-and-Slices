@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customize Your Cake – Sugar and Slices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="customize">
+
+  <div id="site-nav"></div>
+
+  <div class="page-head">
+    <h1>Customize Your Cake</h1>
+    <p>Create a beautiful <b id="customFor">cake</b> according to your choice!</p>
+  </div>
+  <section class="section" style="padding-top:30px">
+    <div class="panel" style="max-width:720px;margin:0 auto">
+      <img id="customImg" alt="" style="width:100%;height:240px;object-fit:cover;border-radius:14px;margin-bottom:10px">
+      <form id="customForm">
+        <h3 class="ptitle" style="margin-top:14px">Choose Your Cake</h3>
+        <div class="two">
+          <div><label>Cake Size</label><select name="size"><option>Half Kg</option><option>1 Kg</option><option>2 Kg</option><option>3 Kg</option></select></div>
+          <div><label>Cake Colour</label><select name="colour"><option>White</option><option>Pink</option><option>Blue</option><option>Purple</option><option>Yellow</option><option>Chocolate Brown</option></select></div>
+        </div>
+        <h3 class="ptitle" style="margin-top:26px">Cake Decorations</h3>
+        <div class="two">
+          <div><label>Would you like candles?</label><select name="candles"><option>Yes</option><option>No</option></select></div>
+          <div><label>Extra Decoration (+₹50)</label><select name="extra"><option>No Extra Decoration</option><option>Chocolate Chips</option><option>Sprinkles</option><option>Fresh Fruits</option><option>Chocolate Shavings</option><option>Pearls</option></select></div>
+          <div><label>Flower Type (+₹100)</label><select name="flower"><option>No Flowers</option><option>Roses</option><option>Daisies</option><option>Lilies</option><option>Sunflowers</option><option>Mixed Flowers</option></select></div>
+          <div><label>Flower Colour</label><select name="fcolour"><option>Pink</option><option>Red</option><option>White</option><option>Yellow</option><option>Blue</option><option>Purple</option></select></div>
+        </div>
+        <label>Name to Write on Cake</label>
+        <input type="text" name="name" maxlength="30" placeholder="Enter name for the cake">
+        <label>Special Message</label>
+        <textarea name="msg" placeholder="Write your special message here..."></textarea>
+        <div class="line" style="display:flex;justify-content:space-between;margin-top:24px;font-size:20px;font-weight:700;color:var(--brown)"><span>Estimated price</span><span id="livePrice">₹0</span></div>
+        <p class="note">Listed price is for Half Kg. Larger sizes and decorations change the price.</p>
+        <button class="btn block" style="margin-top:18px" type="submit">Continue to Delivery Details →</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>
